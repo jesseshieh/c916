@@ -1,8 +1,6 @@
 <div class="bg-black text-center text-white text-sm leading-normal">
-  <div class="container mx-auto px-8 py-4">
-    <div class="w-full md:w-3/4 lg:w-3/4 mx-auto">
-      <div>© 2018 SiteBuilder. All Rights Reserved.</div>
-      <%= link "Privacy Policy", to: page_path(@conn, :privacy), class: "text-white uppercase" %>
-    </div>
+  <div class="flex flex-col md:flex-row items-center justify-center container mx-auto px-8 py-4">
+    <div>© 2018 Café 9:16. All Rights Reserved.</div>
+    <div class="md:ml-1"><%= link "Privacy Policy", to: page_path(@conn, :privacy), class: "text-white" %></div>
   </div>
 </div>

@@ -1,75 +1,165 @@
-<div class="bg-grey-darkest px-6 py-2 text-white leading-normal shadow-inner border-b border-black">
-  <div class="flex flex-wrap justify-between container mx-auto">
-    <div>
-      <i class="fas fa-phone-square fa-lg mr-2"></i> 013 881 0882
-    </div>
-    <div>
-      <i class="fab fa-facebook fa-lg mr-3"></i>Facebook
-    </div>
-  </div>
-</div>
-<div class="bg-kk bg-cover bg-grey-lighter text-center text-white text-lg leading-normal py-8">
-  <div class="container mx-auto py-8">
-    <div class="my-8 mx-4">
-      <h1 class="mb-2 text-3xl text-shadow">Website Rental in Kota Kinabalu</h1>
-      <h2 class="mb-8 text-xl text-shadow">The Best SEO Firm Available in Sabah!</h2>
-      <%= link "013 881 0882", to: "tel:+60138810882", class: "bg-green hover:bg-green-dark px-8 py-3 no-underline text-white text-xl shadow-md border border-green-dark" %>
-    </div>
+<div class="coverWrapper coverWrapper--hero">
+  <div class="cover cover--hero"></div>
+  <div class="absolute pin flex flex-col items-center justify-center">
+    <img class="md:hidden" src="<%= static_path(@conn, "/images/cafe916-smallest.png") %>" >
+    <img class="hidden md:block" src="<%= static_path(@conn, "/images/cafe916-small.png") %>" >
+    <h1 class="mt-4 mb-8 text-xl md:text-3xl text-white text-shadow">Best Ngiu Chap in Kota Kinabalu</h1>
+    <%= link "View On Map", to: "https://goo.gl/maps/4Js2zzSgx7U2", target: "_blank", class: "bg-green hover:bg-green-dark px-8 py-3 no-underline text-white text-xl shadow-md border border-green-dark" %>
   </div>
 </div>
 
-<div class="bg-white leading-normal">
-  <div class="container mx-auto px-6 py-8">
-      <h2 class=" mb-2 text-3xl text-center text-lg">Fast & Reliable Pocket Wifi</h2>
-      <p class="mb-6 text-center">We are Kota Kinabalu's Best Pocket Wifi Rental Provider. Enjoy fast and reliable internet access    anytime, anywhere during your trip in Sabah. We're friendly and our clients love us :)</p>
-
-      <div class="flex flex-wrap flex-col md:flex-row text-white">
-        <div class="flex-1 bg-blue p-4 my-2 md:m-2">
-          <h2 class="mb-1">Pocket Wifi</h2>
-          <p>It was my first time with the Travelwifi and it was amazing! Chega my all trip because it was fast, strong and my phone bill was less expensive at the end , with no surprises!</p>
-        </div>
-        <div class="flex-1 bg-grey-darkest p-4 my-2 md:m-2">
-          <h2 class="mb-1">Pocket Wifi</h2>
-          <p>It was my first time with the Travelwifi and it was amazing! Chega my all trip because it was fast, strong and my phone bill was less expensive at the end , with no surprises!</p>
+<div class="flex flex-col md:flex-row text-white">
+  <div class="w-full md:w-3/5 bg-contact">
+    <div class="flex flex-col md:flex-row items-center p-6">
+      <div class="w-full md:w-1/3 flex items-center px-2 mb-6 md:mb-0">
+        <div>
+          <div class="text-sm mb-2 text-yellow-dark">
+            <i class="fas fa-clock mr-2 text-sm"></i>
+            Tuesday - Sunday
+          </div>
+          <div class="text-sm">10:00 AM ~ 6:00 PM</div>
         </div>
       </div>
-
-      <div class="flex flex-wrap flex-col md:flex-row text-white">
-        <div class="flex-1 bg-blue p-4 my-2 md:m-2">
-          <h2 class="mb-1">Pocket Wifi</h2>
-          <p>It was my first time with the Travelwifi and it was amazing! Chega my all trip because it was fast, strong and my phone bill was less expensive at the end , with no surprises!</p>
+      <div class="w-full md:w-1/2 flex items-center px-2">
+        <div>
+          <div class="text-sm text-yellow-dark mb-2">
+            <i class="fas fa-map-marker-alt mr-2 text-sm"></i>
+              Donggongon Town
+          </div>
+          <div class="text-sm">Lot 18, 1st Floor, Megalong Complex</div>
         </div>
-        <div class="flex-1 bg-grey-darkest p-4 my-2 md:m-2">
-          <h2 class="mb-1">Pocket Wifi</h2>
-          <p>It was my first time with the Travelwifi and it was amazing! Chega my all trip because it was fast, strong and my phone bill was less expensive at the end , with no surprises!</p>
-        </div>
-      </div>
-
-  </div>
-</div>
-
-<div class="bg-blue leading-normal shadow-inner">
-  <div class="container mx-auto p-8">
-
-    <div class="flex flex-no-wrap flex-col md:flex-row">
-      <div class="w-full md:w-2/3 p-2 text-white">
-        <h3 class="text-3xl mb-2">About Us</h3>
-        <p>It was my first time with the Travelwifi and it was amazing! Chega my all trip because it was fast, strong and my phone bill was less expensive at the end , with no surprises!</p>
-      </div>
-      <div class="w-full md:w-1/3 bg-white p-4 shadow-md">
-        <h4 class="text-xl text-blue mb-1">Pocket Wifi</h4>
-        <p>It was my first time with the Travelwifi and it was amazing! Chega my all trip because it was fast, strong and my phone bill was less expensive at the end , with no surprises!</p>
-        <hr class="my-4 border-t border">
-        <div class="text-grey-darker">Linda Yong, Penampang</div>
       </div>
     </div>
-
+  </div>
+  <div class="flex items-left md:items-center w-full md:w-2/5 bg-purple p-6">
+    <div class="px-2 text-3xl">
+      <a href="https://www.facebook.com/Cafe-916-180664365798693/" class="text-white">
+        <i class="fab fa-facebook-square mr-6"></i>
+      </a>
+      <a href="https://www.instagram.com/Lindayong311/" class="text-white">
+        <i class="fab fa-instagram mr-6"></i>
+      </a>
+      <a href="https://www.instagram.com/Lindayong311/" class="text-white">
+        <i class="fab fa-google"></i>
+      </a>
+    </div>
   </div>
 </div>
 
-<div class="bg-kk bg-cover bg-grey-lighter text-center text-white text-lg leading-normal py-8 shadow-inner">
-  <div class="container mx-auto mt-3 mb-8">
-      <h1 class="text-3xl text-shadow mb-6 leading-normal">Call Us Today</h1>
-      <%= link "013 881 0882", to: "tel:+60138810882", class: "bg-green hover:bg-green-dark px-8 py-3 no-underline text-white text-xl shadow-md border border-green-dark" %>
+<div class="flex flex-col md:flex-row">
+  <div class="w-full md:w-1/2">
+    <div class="coverWrapper">
+      <div class="cover cover--shopInterior"></div>
+    </div>
+  </div>
+  <div class="w-full md:w-1/2 p-6 bg-welcome">
+    <div class="p-2">
+      <h2 class="text-3xl">Welcome to Café 9:16</h2>
+      <p>Lorem ipsum dolor sit amet, vix debitis accusamus no, animal luptatum usu ne. Fabulas erroribus constituam cu eum. In elitr nostrum argumentum eos, no has oportere convenire petentium, causae numquam conclusionemque cu quo. Sit unum voluptaria id, et qui aperiam eruditi fierent, his consulatu contentiones eu. Vel modo habeo ubique ad, nostrud corpora cu pri.</p>
+    </div>
   </div>
 </div>
+
+<div class="bg-services leading-normal">
+  <div class="mx-auto p-6">
+    <div class="text-center md:px-2 md:py-6">
+      <div class="p-2">
+        <h3 class="text-3xl mb-2 uppercase">Our Specialties</h3>
+        <p>Simple and tasty homemade dishes made with our very own special recipes.</p>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-center">
+        <div class="w-full md:w-1/3">
+          <div class="flex flex-col mb-8">
+            <div class="border border-black px-8 py-6 mx-auto mb-6">
+              <i class="fas fa-utensils text-3xl"></i>
+            </div>
+            <h3 class="mb-2 uppercase">Tasty Beefs</h3>
+            <p class="md:px-6">Our customers love our beefs. Try our <b>Signature Ngiu Chap Soup</b> today.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3">
+          <div class="flex flex-col mb-8">
+            <div class="border border-black p-6 mx-auto mb-6">
+              <i class="fas fa-coffee text-3xl"></i>
+            </div>
+            <h3 class="mb-2 uppercase">Snacks & Tea</h3>
+            <p class="md:px-6">We make great sandwiches, ice creams and other tasty snacks with drinks.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3">
+          <div class="flex flex-col md:mb-8">
+            <div class="border border-black p-6 mx-auto mb-6">
+              <i class="fas fa-heart text-3xl"></i>
+            </div>
+            <h3 class="mb-2 uppercase">Healthy Soups</h3>
+            <p class="md:px-6">We serve health soups and we love leong cha, especially on a heaty day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-wrap">
+  <div class="w-full md:w-1/3">
+    <div class="coverWrapper">
+      <div class="cover cover--food1"></div>
+    </div>
+  </div>
+  <div class="w-1/2 md:w-1/3">
+    <div class="coverWrapper">
+      <div class="cover cover--food2"></div>
+    </div>
+  </div>
+  <div class="w-1/2 md:w-1/3">
+    <div class="coverWrapper">
+      <div class="cover cover--food3"></div>
+    </div>
+  </div>
+  <div class="w-full md:w-1/3">
+    <div class="coverWrapper">
+      <div class="cover cover--food4"></div>
+    </div>
+  </div>
+  <div class="w-1/2 md:w-1/3">
+    <div class="coverWrapper">
+      <div class="cover cover--food5"></div>
+    </div>
+  </div>
+  <div class="w-1/2 md:w-1/3">
+    <div class="coverWrapper">
+      <div class="cover cover--food6"></div>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col md:flex-row bg-contact text-white">
+  <div class="w-full md:w-1/2 md:pl-6 md:pt-6 md:pb-4">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.591790069715!2d116.10137991476763!3d5.912801595716544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b6627e6cb7853%3A0x85f79e3adcf2ff34!2sMegalong%2C+Donggongon!5e0!3m2!1sen!2smy!4v1539162930889" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="w-full md:w-1/2 p-6">
+    <div class="p-2 md:p-6">
+    <h2>Contact Us</h2>
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      <div class="mb-4">
+        <label class="block text-white text-sm font-bold mb-2" for="sendersName">Name</label>
+        <input type="text" class="appearance-none border w-full py-2 px-3 text-grey-darker leading-tight" id="sendersName" name="name">
+      </div>
+      <div class="mb-4">
+        <label class="block text-white text-sm font-bold mb-2" for="sendersEmail">Email</label>
+        <input type="text" class="appearance-none border w-full py-2 px-3 text-grey-darker leading-tight" id="sendersEmail" name="email">
+      </div>
+      <div class="mb-4">
+        <label class="block text-white text-sm font-bold mb-2" for="sendersMessage">Message</label>
+        <textarea type="text" class="appearance-none border w-full py-2 px-3 text-grey-darker leading-tight" id="sendersMessage" rows="3" name="message"></textarea>
+      </div>
+      <button type="submit" class="bg-green hover:bg-green-dark px-8 py-3 no-underline text-white text-xl shadow-md border border-green-dark">Send Message</button>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+

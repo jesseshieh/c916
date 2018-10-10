@@ -12,6 +12,7 @@
     <meta name="robots" content="<%= no_index @conn, "index" %>" />
 
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
   </head>
 
   <body class="bg-black">

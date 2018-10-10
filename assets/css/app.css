@@ -6,6 +6,108 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre {
   margin: 0 0 1rem 0;
 }
 
+body {
+/*  font-family: 'Pacifico', cursive;
+*/font-family: 'Roboto', sans-serif;
+}
+
 button:focus {
   outline: 0;
+}
+
+.bg-welcome {
+  background-image: url("/images/gplaypattern.png");
+}
+
+.bg-services {
+  background-image: url("/images/food.png");
+}
+
+.bg-contact {
+  background-image: url("/images/ep_naturalblack.png");
+}
+
+.cover--hero {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15)
+    ), url("/images/ngiu-chap-rice.png");
+}
+
+.cover--shopInterior {
+  background-image: url("/images/cafe-916.png");
+}
+
+.cover--shopLogo {
+  background-image: url("/images/cafe916-smallest.png");
+}
+
+.coverWrapper {
+  @apply
+  .relative;
+  padding-top: 56.25%;
+}
+
+.coverWrapper--hero {
+  padding-top: 100%;
+}
+
+@screen md {
+  .coverWrapper--hero {
+    padding-top: 56.25%;
+  }
+}
+
+.cover {
+  @apply
+  .absolute
+  .pin-t
+  .pin-r
+  .pin-b
+  .pin-l
+  .w-full
+  .bg-cover
+  .bg-center;
+}
+
+.cover--food1 {
+  @apply
+  .border
+  .border-white;
+  background-image: url("/images/ngiu-chap-rice.png");
+}
+
+.cover--food2 {
+  @apply
+  .border
+  .border-white;
+  background-image: url("/images/yee-mien.png");
+}
+
+.cover--food3 {
+  @apply
+  .border
+  .border-white;
+  background-image: url("/images/nasi-lemak.png");
+}
+
+.cover--food4 {
+  @apply
+  .border
+  .border-white;
+  background-image: url("/images/healthy-soup.png");
+}
+
+.cover--food5 {
+  @apply
+  .border
+  .border-white;
+  background-image: url("/images/oreo-ice-cream.png");
+}
+
+.cover--food6 {
+  @apply
+  .border
+  .border-white;
+  background-image: url("/images/korean-pancake.png");
 }

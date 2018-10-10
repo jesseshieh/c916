@@ -1,24 +1,24 @@
-<nav class="bg-white px-6 py-4 border-b shadow">
-  <div class="flex items-center justify-between flex-wrap container mx-auto">
-    <a href="/" class="flex items-center flex-no-shrink text-blue mr-6 no-underline">
-      <span class="font-semibold text-xl tracking-tight">SiteBuilder</span>
+<nav class="bg-white px-6 py-4 border-b">
+  <div class="flex items-center justify-between flex-wrap mx-auto">
+    <a href="/" class="flex items-center flex-no-shrink text-purple mr-6 no-underline">
+      <span class="font-semibold text-2xl text-shadow tracking-tight">Café 9:16</span>
     </a>
     <div class="flex items-center w-auto ml-auto">
       <div class="text-sm flex-grow">
-        <%= link "Home", to: page_path(@conn, :index), class: "hidden md:inline-block mt-0 inline-block text-blue hover:text-black mr-4 no-underline" %>
-        <%= link "About Us", to: page_path(@conn, :about), class: "hidden md:inline-block mt-0 inline-block text-blue hover:text-black mr-4 no-underline" %>
-        <%= link "Contact Us", to: page_path(@conn, :contact), class: "hidden md:inline-block mt-0 inline-block text-blue hover:text-black no-underline" %>
+        <%= link "Home", to: page_path(@conn, :index), class: "hidden md:inline-block mt-0 inline-block text-purple hover:text-black mr-4 no-underline" %>
+        <%= link "View On Map", to: "https://goo.gl/maps/4Js2zzSgx7U2", target: "_blank", class: "hidden md:inline-block mt-0 inline-block text-purple hover:text-black mr-4 no-underline" %>
+        <%= link "Contact Us", to: page_path(@conn, :contact), class: "hidden md:inline-block mt-0 inline-block text-purple hover:text-black no-underline" %>
       </div>
     </div>
     <div>
-      <button class="flex items-center md:hidden px-3 py-2 border text-blue border-blue hover:text-black hover:border-black" @click="menu = !menu" v-on-clickaway="closeMenu">
+      <button class="flex items-center md:hidden px-3 py-2 border text-purple border-purple hover:text-purple hover:border-purple" @click="menu = !menu" v-on-clickaway="closeMenu">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
     </div>
   </div>
 </nav>
-<ul class="text-center bg-white list-reset py-2" v-show="menu" >
-  <li class="py-2"><%= link "Home", to: page_path(@conn, :index), class: "md:inline-block mt-0 inline-block text-blue hover:text-black no-underline" %></li>
-  <li class="py-2"><%= link "About", to: page_path(@conn, :about), class: "md:inline-block mt-0 inline-block text-blue hover:text-black no-underline" %></li>
-  <li class="py-2"><%= link "Contact", to: page_path(@conn, :contact), class: "md:inline-block mt-0 inline-block text-blue hover:text-black no-underline" %></li>
+<ul class="text-center bg-white list-reset py-2 border-b" v-show="menu" >
+  <li class="py-2"><%= link "Home", to: page_path(@conn, :index), class: "md:inline-block mt-0 inline-block text-purple hover:text-black no-underline" %></li>
+  <li class="py-2"><%= link "View On Map", to: "https://goo.gl/maps/4Js2zzSgx7U2", target: "_blank", class: "md:inline-block mt-0 inline-block text-purple hover:text-black no-underline" %></li>
+  <li class="py-2"><%= link "Contact", to: page_path(@conn, :contact), class: "md:inline-block mt-0 inline-block text-purple hover:text-black no-underline" %></li>
 </ul>
